@@ -1,37 +1,35 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <title>Title of Site</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="stylesheet" href="/css/site.css" />
+    <link rel="stylesheet" href="css/site.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/site.js"></script>
   </head>
 
   <body>
 
     <div id="wrapper">
-
-      <na id="nav">
-
-        <a href="#" class="home"><span>About Me</span></a>
-        <a href="#signups" class="folder"><span>Signups</span></a>
-        <a href="#contact" class="envelope"><span>Contact the North Pole</span></a>
-        <a href="#social" class="social-media"><span>Social Media</span></a>
-        <a href="#tracker" class="santa-tracker"><span>Santa Tracker</span></a>
-      </na>
-
+      <div class="topnav" id="myTopnav">
+        <h1 id="greeting">Welcome to the North Pole!</h1>
+        <a href="javascript:void(0);" class="icon" onclick="addRespClass()">
+          <i class="fa fa-bars"></i>
+        <a href="#tracker" id="tracker"><span>Where am I now?</span></a>
+        <a href="#contact-me" id="contact-me"><span>Email Santa!</span></a>
+        <a href="#signup" id="signup"><span>Signups</span></a>
+        <a href="#services" id="services"><span>My Services</span></a>
+        <a href="#gallery" id="gallery"><span>Gallery</span></a>
+        <a href="#home" id="home"><span>Home</span></a>
+      </div>
       <div id=main>
-
         <article id="landing" class="starting-frame">
           <header>
             <h1>About Old Saint Nick</h1>
             <p>The King in the North</p>
           </header>
           <a href="#signups" class="signups-img">
-      </div>
-      <div id =tracker>
-        <iframe src="http://www.noradsanta.org/map.html?embed=true" width="600" height="450" frameborder="0" scrolling="no">
-        </iframe>
       </div>
     </div>
   </body>
