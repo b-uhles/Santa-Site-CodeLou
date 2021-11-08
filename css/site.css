@@ -40,6 +40,11 @@
   color: #ECDEB9;
 }
 
+.logo {
+  float: left;
+  padding-left: 10px;
+}
+
 /*Displays the nav bar opener/closer on small devices*/
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
@@ -52,10 +57,12 @@
 /*references addrespclass() to reorganize the mobile layout of the navbar*/
 @media screen and (max-width: 600px) {
   .topnav.responsive {
-    position: relative;
+    position: fixed;
+    top: 30px;
+    width: 100%;
   }
   .topnav.responsive a.icon {
-    position: relative;
+    position: fixed;
     right: 0;
     top: 0;
   }
