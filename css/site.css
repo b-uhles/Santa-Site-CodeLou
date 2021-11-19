@@ -6,6 +6,14 @@
   font-family: "Mountains of Christmas", Times, sans-serif;
 }
 
+body{
+  background-image: url('christmas.jfif');
+}
+
+.contact-form{
+  background-color: #92010D;
+}
+
 
 .topnav {
   background-color: #92010D;
@@ -53,7 +61,22 @@
     display: block;
   }
 }
+.flex-container {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 50%;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 50%;
+  justify-content: flex-end;
+}
 
+.field:last-child {
+  align-self: flex-start;
+}
 /*references addrespclass() to reorganize the mobile layout of the navbar*/
 @media screen and (max-width: 600px) {
   .topnav.responsive {
@@ -74,4 +97,14 @@
     background-color: #660109;
     position: relative;
   }
+
+.flex-item-left {
+  flex: 50%;
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
 }

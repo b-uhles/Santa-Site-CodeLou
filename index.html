@@ -4,13 +4,12 @@
     <title>Title of Site</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="stylesheet" href="css/site.css" />1
+    <link rel="stylesheet" href="css/site.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/site.js"></script>
   </head>
 
   <body>
-
     <div id="wrapper">
       <div class="topnav" id="myTopnav">
         <img a="" alt="Welcome to the North Pole!" id="greeting" class="logo">
@@ -31,6 +30,25 @@
           </header>
           <a href="#signups" class="signups-img">
       </div>
+    </div>
+    <!--placeholder video until synopsis is recorded
+    <iframe width="1280" height="720" src="https://www.youtube.com/embed/csEJapE6hL8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+    <div id="contact-form" class="flex-container">
+      <h1>Contact Santa</h1>
+      <form onsubmit="return false"></form>  
+      <input class = "field" type="text" placeholder="Enter your last name" id="lastName" />
+      <br><br>
+      <input class = "field" type="text" placeholder="Enter your first name" id="firstName" />
+      <br><br>
+      <input class = "field" type="email" placeholder="Enter your email" id="email"/>
+      <br><br>
+      <input class = "field" type="checkbox" id="openings" />Notify me when there are comission openings!
+      <br><br>
+      <span>Message</span>
+      <br>
+      <textarea class = "field" id="message" rows="4"></textarea>
+      <br><br>
+      <button onclick="sendMessage();">Send contact</button>
     </div>
   </body>
 </html>
